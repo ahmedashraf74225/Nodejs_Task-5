@@ -1,0 +1,10 @@
+USE  thecamp_market_sells;
+
+INSERT INTO sells(product_id, sells_quantity, recorded_date)
+VALUES (1, 3, '2022-03-21 00:00:00');
+
+INSERT INTO sells(product_id, sells_quantity, recorded_date)
+VALUES (2, 5, '2022-03-21 00:00:00');
+
+INSERT INTO sells(product_id, sells_quantity, recorded_date)
+VALUES (3, 2, '2022-03-21 00:00:00');

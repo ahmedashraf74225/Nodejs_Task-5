@@ -1,0 +1,14 @@
+SELECT 
+    p.id, 
+    p.product_name, 
+    p.product_value, 
+    p.product_quantity, 
+    SUM(COALESCE(s.sells_quantity, 0)) AS total_quantity_sold, 
+    p.recorded_date
+FROM 
+    thecamp_market.products AS p
+    LEFT JOIN thecamp_market_sells.sells AS s ON p.id = s.product_id
+GROUP BY 
+    p.id
+ORDER BY 
+    p.id;

@@ -1,0 +1,10 @@
+USE thecamp_market;
+
+INSERT INTO products (product_name, product_value, product_quantity, recorded_date)
+VALUES ('Pepsi', 5.0, 20, '2022-03-21 00:00:00');
+
+INSERT INTO products (product_name, product_value, product_quantity, recorded_date)
+VALUES ('Coca Cola', 4.5, 15, '2022-03-21 00:00:00');
+
+INSERT INTO products (product_name, product_value, product_quantity, recorded_date)
+VALUES ('Lays Chips', 3.0, 30, '2022-03-21 00:00:00');

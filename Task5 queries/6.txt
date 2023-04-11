@@ -1,0 +1,6 @@
+USE  thecamp_market_sells;
+
+SELECT product_id, SUM(sells_quantity) AS total_quantity_sold
+FROM sells
+GROUP BY product_id
+ORDER BY product_id;
